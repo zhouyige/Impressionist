@@ -1,0 +1,15 @@
+#vs2012
+*ipch
+*.tlog
+*.pdb
+*.user
+*sdf
+*.suo
+*.lib
+
+#dir
+lib
+bin
+tmp
+Debug
+Release

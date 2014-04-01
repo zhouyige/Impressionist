@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GacLib", "build\gaclib\gaclib.v120.vcxproj", "{54812FFF-F866-4B77-BF7E-CC30ADB9DC52}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Impressionist", "build\impressionist\impressionist.v120.vcxproj", "{B700003D-5661-45E1-B6EB-0895C80A67D9}"
+	ProjectSection(ProjectDependencies) = postProject
+		{54812FFF-F866-4B77-BF7E-CC30ADB9DC52} = {54812FFF-F866-4B77-BF7E-CC30ADB9DC52}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54812FFF-F866-4B77-BF7E-CC30ADB9DC52}.Debug|Win32.ActiveCfg = Debug|Win32
+		{54812FFF-F866-4B77-BF7E-CC30ADB9DC52}.Debug|Win32.Build.0 = Debug|Win32
+		{54812FFF-F866-4B77-BF7E-CC30ADB9DC52}.Release|Win32.ActiveCfg = Release|Win32
+		{54812FFF-F866-4B77-BF7E-CC30ADB9DC52}.Release|Win32.Build.0 = Release|Win32
+		{B700003D-5661-45E1-B6EB-0895C80A67D9}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B700003D-5661-45E1-B6EB-0895C80A67D9}.Debug|Win32.Build.0 = Debug|Win32
+		{B700003D-5661-45E1-B6EB-0895C80A67D9}.Release|Win32.ActiveCfg = Release|Win32
+		{B700003D-5661-45E1-B6EB-0895C80A67D9}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
