@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Resource>
+  <Folder name="GacGenConfig">
+    <Text name="Include">..\..\externals\Gaclib\Include\GacUIReflection.h</Text>
+    <Text name="Name">ImpressionistUI</Text>
+    <Text name="Prefix">Impressionist</Text>
+  </Folder>
+  <Folder name="UI">
+    <Instance name="MainWindowResource">
+      <Instance ref.Class="ui::MainWindow">
+        <Window Text="Impressionist" ClientSize="x:800 y:600">
+          <att.BoundsComposition-set PreferredMinSize="x:640 y:480"/>
+        </Window>
+      </Instance>
+    </Instance>
+  </Folder>
+</Resource>
