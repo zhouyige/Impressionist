@@ -12,9 +12,20 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\include\gui_main.h" />
+    <ClInclude Include="..\..\source\UI\ImpressionistMainWindow.h" />
+    <ClInclude Include="..\..\source\UI\ImpressionistUI.h" />
+    <ClInclude Include="..\..\source\UI\ImpressionistUIPartialClasses.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\source\UI\ImpressionistMainWindow.cpp" />
+    <ClCompile Include="..\..\source\UI\ImpressionistUIPartialClasses.cpp" />
     <ClCompile Include="..\..\source\win_main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\source\UI\Resources.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\source\UI\Codegen.bat" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{B700003D-5661-45E1-B6EB-0895C80A67D9}</ProjectGuid>

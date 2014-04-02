@@ -1,5 +1,5 @@
 #include <Windows.h>
-#include <GacLib/Include/GacUI.h>
+#include "UI\ImpressionistUI.h"
 
 int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int CmdShow)
 {
@@ -8,22 +8,9 @@ int CALLBACK WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLi
 
 void GuiMain()
 {
-	GuiWindow* window = g::NewWindow();
-	window->SetText(L"Hello, world!");
-	window->SetClientSize(Size(640, 480));
-	window->MoveToScreenCenter();
-
-	GuiControl* label = g::NewLabel();
-	label->SetText(L"Impressionist");
-	{
-		FontProperties font;
-		font.fontFamily = L"Segoe UI";
-		font.size = 40;
-		font.antialias = true;
-		label->SetFont(font);
-	}
-	window->AddChild(label);
-
-	GetApplication()->Run(window);
-	delete window;
+	GetInstanceLoaderManager()->SetResource(L"ImpressionistUI", GuiResource::LoadFromXml(L"Resources.xml"));
+	ui::MainWindow window;
+	window.ForceCalculateSizeImmediately();
+	window.MoveToScreenCenter();
+	GetApplication()->Run(&window);
 }
